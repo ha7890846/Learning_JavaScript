@@ -1,0 +1,13 @@
+.body{
+    background: #000;
+    color: #fff;
+    font-size: medium;
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+}
+.operatorTable{
+    display: table;
+    border: #000;
+    border-style: dashed;
+}
+

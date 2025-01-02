@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Related Page</title>
+  </head>
+  <body>
+    <div id="main-content">
+      <div id="firstChildDiv">
+        <h1 id="first-heading">This is the first Heading.
+            <span>This is the span Tag.</span>          <!-- this  is comment -->
+        </h1>
+      </div>
+    </div>
+    <script>
+      // Get the first child element of the main content div
+      var first_child = document.getElementById("firstChildDiv");
+      console.log(first_child.firstElementChild);
+      const parentDiv = document.getElementById("main-content").children;
+      for (const child of parentDiv) {
+        console.log(child);
+      }
+
+
+      var text1 = document.getElementById("first-heading");
+      console.log("This is the output for textcont:"+text1.textContent);
+      console.log("This is the output for innerHTML:"+text1.innerHTML);
+
+    </script>
+  </body>
+</html>
